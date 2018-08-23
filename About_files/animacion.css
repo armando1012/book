@@ -1,0 +1,94 @@
+body {
+    background: #000;
+    height: 100vh;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+#ui {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 500px;
+    transform: translate3d(-100px, -200px, 0);
+}
+
+#ui .crystal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform-origin: 100px 200px;
+    animation: rotate 5000ms ease-in-out infinite alternate;
+}
+
+#ui .crystal_panel {
+    animation: light 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+}
+
+#ui .crystal_panel.top {
+    position: absolute;
+    border-bottom: 200px double pink;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    transform-origin: 50% 100%;
+    transform-style: preserve-3d;
+}
+
+#ui .crystal_panel.top.front {
+    border-bottom: linear-gradient(black, pink);
+    transform: translate3d(0, 0, 100px) rotateX(30deg);
+}
+
+#ui .crystal_panel.top.back {
+    border-bottom-color: #E8E8E8;
+    transform: translate3d(0, 0, -100px) rotateX(-30deg);
+}
+
+#ui .crystal_panel.top.left {
+    border-bottom-color: white;
+    transform: translate3d(-100px, 0, 0) rotateZ(30deg) rotateY(-90deg);
+}
+
+#ui .crystal_panel.top.right {
+    border-bottom-color: white;
+    transform: translate3d(100px, 0, 0) rotateZ(-30deg) rotateY(-90deg);
+}
+
+#ui .crystal_panel.bottom {
+    position: absolute;
+    border-top: 200px double yellow;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    transform-origin: 50% 0%;
+    transform-style: preserve-3d;
+}
+
+#ui .crystal_panel.bottom.front {
+    border-top-color: yellow;
+    transform: translate3d(0, 200px, 100px) rotateX(-30deg);
+}
+
+#ui .crystal_panel.bottom.back {
+    border-top-color: #575558;
+    transform: translate3d(0, 200px, -100px) rotateX(30deg);
+}
+
+#ui .crystal_panel.bottom.left {
+    border-top-color: #575558;
+    transform: translate3d(-100px, 200px, 0) rotateZ(-30deg) rotateY(-90deg);
+}
+
+#ui .crystal_panel.bottom.right {
+    border-top-color: #A3A3A3;
+    transform: translate3d(100px, 200px, 0) rotateZ(30deg) rotateY(-90deg);
+}
+
+@keyframes rotate {
+    90% {
+        transform: rotateX(30deg) rotateY(-30deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(30deg) rotateZ(0deg);
+    }
+}

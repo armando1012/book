@@ -1,0 +1,370 @@
+    @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+    body {
+        background-color: white;
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+    }
+    
+    .slide {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .cover {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        color: black;
+    }
+    
+    .navbar {
+        flex-wrap: wrap;
+        display: flex;
+        height: 70px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        z-index: 999;
+        color: black;
+        font-size: 20px;
+    }
+    
+    .pestanas {
+        display: flex;
+    }
+    
+    .pestanas p {
+        margin: 0 20px;
+        font-size: 30px;
+    }
+    
+    .slogan {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .slogan p {
+        font-size: 40px;
+        color: white;
+        transition: all 1s ease;
+    }
+    
+    .slogan h1 {
+        font-size: 70px;
+        color: white;
+        margin-bottom: 5px;
+    }
+    
+    .move hr {
+        background-color: white;
+        width: 0px;
+        height: 1px;
+        border: none;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    
+    .move:hover hr {
+        width: 120px;
+    }
+    
+    .move:hover p {
+        opacity: 1;
+        margin-top: 10px;
+    }
+    
+    .flex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .move:hover hr {
+        width: 120px;
+    }
+    /*about*/
+    
+    .navbar a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .about a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .descript h2 {
+        font-size: 28px;
+        color: #9B9B9B;
+    }
+    
+    .descript p {
+        color: white;
+    }
+    
+    .descript {
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    
+    .box_desc {
+        width: 350px;
+        flex-grow: 1;
+    }
+    
+    .photo {
+        width: 399px;
+        height: 399px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-image: url('2.png');
+        display: flex;
+        flex: wrap;
+        justify-content: right;
+        align-items: right;
+        padding-right: 10px;
+        margin-right: 60px;
+    }
+    
+    .photo img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .about i {
+        color: white;
+        margin: 0 10px;
+        font-size: 32px;
+    }
+    
+    ul li {
+        list-style: none;
+        color: white;
+    }
+    
+    .logo {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 36px;
+        color: black;
+    }
+    
+    .formulario {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Nunito Sans', sans-serif;
+        color: white;
+    }
+    
+    .x1 {
+        width: 350px;
+        flex-grow: 1;
+        height: auto;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Nunito Sans';
+        margin-top: 20px;
+    }
+    
+     ::placeholder {
+        color: white;
+    }
+    
+    .photox {
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-image: url('1.png');
+        display: flex;
+        flex: wrap;
+        justify-content: right;
+        align-items: right;
+    }
+    
+    .contact h1 {
+        color: white !important;
+    }
+    
+    button {
+        border-radius: 3px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+    }
+    
+    input {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid white;
+        color: white;
+        width: 380px;
+        font-size: 18px;
+    }
+    
+    .photo_logo {
+        width: 450px;
+        height: 450px;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-image: url('logo.png');
+        display: flex;
+        flex: wrap;
+        justify-content: right;
+        align-items: right;
+        margin-top: 60px;
+    }
+    
+    .cool-link {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .cool-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width .3s;
+        border-radius: 2px;
+    }
+    
+    .cool-link:hover::after {
+        width: 100%;
+        //transition: width .3s;
+    }
+    
+    .proyectos a {
+        text-decoration: none;
+        color: inherit;
+        font-family: 'Nunito Sans'
+    }
+    
+    .flexito {
+        width: 80%;
+        height: auto;
+        margin: 50 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-top: 60px;
+    }
+    
+    .overflow {
+        width: 500px;
+        height: 400px;
+        flex-grow: 1;
+        margin: 5px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    
+    .uno {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .fotito_uno {
+        background-image: url('1.0.jpg');
+    }
+    
+    .fotito_dos {
+        background-image: url('tiango.png');
+    }
+    
+    .fotito_tres {
+        background-image: url('sanofi.png');
+    }
+    
+    .uno:hover {
+        animation: escala;
+        animation-duration: 2s;
+    }
+    
+    .dos:hover {
+        animation: escala;
+        animation-duration: 2s;
+    }
+    
+    .uno:hover .coverw {
+        display: inherit;
+    }
+    
+    .dos:hover .coverw {
+        display: inherit;
+    }
+    
+    .coverw {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        transform: al 1s ease;
+        padding-top: 70px;
+    }
+    
+    .coverw h3 {
+        font-size: 30px;
+        text-align: left;
+    }
+    
+    .uno:hover .coverw {
+        background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .uno:hover .coverw h3 {
+        text-align: center !important;
+        font-size: 30px;
+    }
+    
+    .medium-btn {
+        width: 70px;
+        height: 30px;
+    }
+    
+    .navcita {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .flexwork {
+        display: none;
+        text-align: center;
+    }
+    
+    x
